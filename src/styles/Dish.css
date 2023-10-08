@@ -1,0 +1,25 @@
+.divDish{
+    display: flex; 
+    justify-content: flex-end;
+     margin-top:15px;
+}
+.cardDish{
+    max-width:60rem;
+     min-height:300px;
+}
+.card-img{
+    max-width:130px;
+}
+.card-body{
+    padding-top:0;
+    padding-left:10px;
+}
+.card-body h3{
+    text-align:left; 
+    font-size:18px;
+}
+.card-body p{
+    text-align:justify;
+    font-size:15px;
+    margin-top:15px;
+}

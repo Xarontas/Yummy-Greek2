@@ -1,0 +1,25 @@
+.tabs-main{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.tabtitle{
+    border-top:5px solid olive; 
+    font-size:15px;
+    text-align:left; 
+    padding-top:10px;
+    height: 250px;
+    border-bottom: 1px solid gainsboro;
+}
+.tabUl{
+    list-style-image:url(checkmark3.png);
+}
+.tabUl li{
+    padding-left: 20px;
+}
+.nav .nav-link{
+    color:olive;
+}
+.nav .nav-link:hover{
+    color:rgb(195, 195, 0);
+}

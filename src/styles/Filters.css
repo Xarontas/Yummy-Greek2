@@ -1,0 +1,14 @@
+.form-check-input:checked{
+    background-color: olive;
+    border-color: olive;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: olive;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    border-color: olivedrab;
+    box-shadow: none;
+}

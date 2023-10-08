@@ -1,0 +1,8 @@
+.toast{
+    --bs-toast-max-width: unset;
+}
+.toastDiv{
+    border:1px solid grey; 
+    padding:5px 0; 
+    cursor:pointer;
+}

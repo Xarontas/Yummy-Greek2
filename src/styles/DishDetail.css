@@ -1,0 +1,41 @@
+.dishBg{
+    background-color: #fbfbfb;
+}
+.titleBg{
+    background-color:olive;
+    height:300px;
+    margin-bottom:-200px;
+}
+.titleBg h2{
+    color:moccasin;
+}
+.dishDiv{
+    background-color:white; 
+    max-width:700px; 
+    margin:auto;
+    box-shadow:0px 2px 3px grey; 
+    margin-bottom:50px;
+}
+.dishImage{
+    background-repeat:no-repeat; 
+    background-size:cover; 
+    background-Position:center; 
+    min-height:300px;
+}
+.dishPar{
+    text-align:justify; 
+    padding:30px 30px 40px; 
+    border-bottom:1px solid gainsboro; 
+    font-size:14px;
+}
+.btnBack{
+    background-color: olive;
+    border-color: olive;
+}
+.btnBack:hover{
+    background-color: rgb(200, 200, 1);
+    border-color: rgb(200, 200, 1);
+}
+.btn-primary{
+  --bs-btn-active-bg: olive;
+}
