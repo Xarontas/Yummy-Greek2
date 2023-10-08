@@ -12,7 +12,7 @@
     border-bottom: 1px solid gainsboro;
 }
 .tabUl{
-    list-style-image:url(checkmark3.png);
+    list-style-image:url(../checkmark3.png);
 }
 .tabUl li{
     padding-left: 20px;
