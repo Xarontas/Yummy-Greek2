@@ -21,13 +21,13 @@ export default function Order({}){
             </Modal.Header>
             <Modal.Body>
                 <div className='modalBodyDiv'>
-                    <img src="moussaka.jpg" alt="food image" width="40" height="40" />
+                    <img src="../../moussaka.jpg" alt="food image" width="40" height="40" />
                     <span>Moussaka</span>
                     <span>15.99€</span>
                     <span>x</span>
                 </div>
                 <div className='modalBodyDiv'>
-                    <img src="greek-salad.jpg" alt="food image" width="40" height="40" />
+                    <img src="../../greek-salad.jpg" alt="food image" width="40" height="40" />
                     <span>Greek Salad</span>
                     <span>10.99€</span>
                     <span>x</span>
