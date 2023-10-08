@@ -20,7 +20,7 @@ export default function DishDetail({id, name, description, price, tags, ingredie
                 </div>
 
                 <div className="row dishDiv">
-                    <div className="col-md-4 dishImage" style={{backgroundImage: `url(${image}`}}></div>
+                    <div className="col-md-4 dishImage" style={{backgroundImage: `url(../${image}`}}></div>
                     <div className="col-md-8">                
                         <p className="dishPar">{description}</p>
                         <div className="text-end fw-bold">{price}€</div>
