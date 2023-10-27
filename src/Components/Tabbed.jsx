@@ -4,21 +4,24 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
 
-export default function Tabbed({...ingredients}){
+export default function Tabbed({ingredients, dietary, allergens}){
     const [key, setKey] = useState('Ingredients');
-    const ingred = [{...ingredients}];   
     
-    const index = Object.keys(ingredients).length; 
-    var ing;
-    for (let i=0; i< index; i++){
-    ing =  ingred.map((n) => {
-    <li key={n[0][i]} value={n[0][i]}>
-        fdfsdfsdf
-    </li>  
-      console.log(index);
-    console.log(ing);
-    })};
+
+
   
+    const arrayDataItems = ingredients.map((ingredient) => 
+        <li key={ingredient}> {ingredient}</li>
+    )
+
+    const dietary2 = dietary.map((diet) => 
+        <li key={diet}> {diet}</li>
+    )
+   
+    const allergens2 = allergens.map((allergen) => 
+        <li key={allergen}> {allergen}</li>
+    )
+   
     
     
     return(   
@@ -26,31 +29,20 @@ export default function Tabbed({...ingredients}){
 
         <Tabs id="controlled-tab-example" activeKey={key} onSelect={(k) => setKey(k)} className="mb-3 tabs-main">
             <Tab eventKey="Ingredients" title="Ingredients" className="tabtitle">
+                
+
                 <ul className="tabUl">
-                    {ing }
-                    <li>----------------</li>
-                    <li>{ingredients[0]}</li>
-                    {/* <li>Thinly sliced eggplant</li> */}
-                    <li>Seasoned ground beef or lamb</li>
-                    <li>Onions</li>
-                    <li>Garlic</li>
-                    <li>Tomatoes</li>
-                    <li>Red wine</li>
-                    <li>Cinnamon</li>
-                    <li>Nutmeg</li>
-                    <li>Béchamel sauce</li>
+                    {arrayDataItems}
                 </ul>
             </Tab>
             <Tab eventKey="Dietary" title="Dietary Preferences" className="tabtitle">
                 <ul className="tabUl">
-                    <li>vegan</li>
-                    <li>gluten-free</li>
+                    {dietary2}
                 </ul>
             </Tab>
             <Tab eventKey="Allergens" title="Allergens" className="tabtitle">
                 <ul className="tabUl">
-                    <li>contains-nuts</li>
-                    <li>contains-gluten</li>
+                   {allergens2}
                 </ul>
             </Tab>
         </Tabs>

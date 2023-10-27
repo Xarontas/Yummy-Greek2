@@ -5,9 +5,10 @@ import Button from 'react-bootstrap/Button';
 import '../styles/DishDetail.css'
 import Placed from "./Placed";
 
-export default function DishDetail({id, name, description, price, tags, ingredients, image}){
+export default function DishDetail({id, name, description, price, dietary, allergens, ingredients, image}){
     () => {const urlImage = {image}};
-    console.log("con:", [ingredients[0]]);
+    
+
     return(
         <>
         
@@ -26,7 +27,7 @@ export default function DishDetail({id, name, description, price, tags, ingredie
                         <div className="text-end fw-bold">{price}€</div>
                     </div>
                 </div>
-                <Tabbed {...ingredients} />
+                <Tabbed ingredients={ingredients} dietary={dietary} allergens={allergens} />
             </div>
             <div className="d-flex justify-content-around my-4">
                <Link to='/'>
