@@ -149,18 +149,24 @@
       "name": "Saganaki",
       "description": "Saganaki is a delightful Greek appetizer featuring flaming cheese. Typically, a slice of cheese (often Kefalotyri, Graviera, or Halloumi) is dredged in flour, pan-fried, and then set ablaze at the table with the help of some brandy. The result is a gooey, slightly crispy, and deliciously cheesy dish that's served with a squeeze of lemon and bread.",
       "price": 11.99,
-      "tags": ["vegan", "gluten-free", "contains-nuts", "contains-gluten"],
+      "image": "Saganaki.jpg",
       "ingredients": ["Cheese", "Brandy", "Lemon", "Flour"],
-      "image": "Saganaki.jpg"
+      "tags": {
+        "dietaryPreferences": ["vegan", "gluten-free"],
+        "allergens": []
+      }
     },
     {
       "id": 10,
       "name": "Greek Lemon Chicken",
       "description": "Greek Lemon Chicken is a flavorful dish featuring roasted chicken with a lemon and oregano marinade. It's typically served with roasted potatoes, creating a harmonious blend of citrusy and savory flavors.",
       "price": 16.99,
-      "tags": ["lactose-free", "contains-gluten"],
+      "image": "Lemon-Chicken.jpg",
       "ingredients": ["Chicken", "Lemon", "Oregano", "Potatoes"],
-      "image": "Lemon-Chicken.jpg"
+      "tags": {
+        "dietaryPreferences": ["vegan", "gluten-free"],
+        "allergens": ["contains-gluten"]
+      }
     }
   ]
 }
